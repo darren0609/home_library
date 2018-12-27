@@ -42,7 +42,7 @@ func contentFromServer(url string) string {
 	return string(bytes)
 }
 
-// ClassifySearchResponse is a struct for the results
+// ClassifySearchResponse is a struct for the results it is built from books.
 type ClassifySearchResponse struct {
 	Results []Book `xml:"works>work"`
 }
